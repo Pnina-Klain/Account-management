@@ -1,4 +1,5 @@
 const {MongoClient} = require('mongodb')
+
 let client = null
 
 async function openConnection(server){

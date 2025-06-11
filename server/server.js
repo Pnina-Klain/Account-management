@@ -1,19 +1,18 @@
+require('dotenv').config();
+const express = require('express');
+const connectDB = require('./config/db');
+const receiptRoutes = require('./routes/receiptRoutes');
+const expenseRoutes = require('./routes/expenseRoutes');
+const analyticsRoutes = require('./routes/analyticsRoutes');
 
-require ('dotenv').config()
-const http = require('http')
-const app = require('./app')
+const app = express();
+app.use(express.json());
 
-const {openConnection} = require('./services/mongo-connection')
-const { HOST = localhost, PORT = 3000, MONGO_DB_URL ='mongodb://localhost:27017'} = process.env
-                                                    
-const serverUrl = MONGO_DB_URL
+connectDB();
 
-openConnection(serverUrl).then(_ =>{
-    app.listen(PORT||3000, HOST||localhost, ()=>{
-        console.log(`Server is runnin on "http://${HOST}:${PORT}"`)
-    })
-    const server = http.createServer(app)
-}).catch(ex=>{
-    console.log({ex})
-    console.log('Could not open a connection to mongo db server')
-})
+app.use('/api/receipts', receiptRoutes);
+app.use('/api/expenses', expenseRoutes);
+app.use('/api/analytics', analyticsRoutes);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

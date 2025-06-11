@@ -1,0 +1,148 @@
+/* dashboard.component.css */
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.card-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.small-icon {
+  width: 1.5rem; /* Small icon size */
+  height: 1.5rem; /* Small icon size */
+}
+
+.text-success-600 {
+  color: #16a34a; /* Green color */
+}
+
+.text-error-600 {
+  color: #dc2626; /* Red color */
+}
+
+.text-primary-600 {
+  color: #3b82f6; /* Blue color */
+}
+
+.text-warning-600 {
+  color: #ca8a04; /* Yellow color */
+}
+
+.hover\:shadow-medium:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.transition-shadow {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.bg-success-100 {
+  background-color: #d1fae5; /* Light green */
+}
+
+.bg-error-100 {
+  background-color: #fee2e2; /* Light red */
+}
+
+.bg-primary-100 {
+  background-color: #dbf0ff; /* Light blue */
+}
+
+.bg-warning-100 {
+  background-color: #fef9c3; /* Light yellow */
+}
+
+.text-gray-600 {
+  color: #4b5563; /* Gray color */
+}
+
+.text-gray-900 {
+  color: #111827; /* Dark gray */
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem; /* Space between items */
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lg\:grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.lg\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mb-8 {
+  margin-bottom: 2rem; /* Bottom margin */
+}
+
+.p-4 {
+  padding: 1rem; /* Padding */
+}
+
+.rounded-lg {
+  border-radius: 0.5rem; /* Rounded corners */
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: #f3f4f6; /* Light gray on hover */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-8 {
+  padding-top: 2rem; /* Padding top */
+  padding-bottom: 2rem; /* Padding bottom */
+}
+
+.text-gray-500 {
+  color: #6b7280; /* Gray color */
+}

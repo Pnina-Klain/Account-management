@@ -1,0 +1,71 @@
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+  border: 1px solid #e5e7eb; /* גבול קל */
+  border-radius: 0.375rem; /* פינות מעוגרות */
+  background-color: #fff; /* צבע רקע */
+}
+
+.table {
+  width: 100%; /* רוחב מלא */
+  border-collapse: collapse; /* מיזוג גבולות */
+}
+
+.table-header {
+  background-color: #f9fafb; /* צבע רקע לכותרות */
+}
+
+.table-header-cell {
+  padding: 0.75rem; /* ריפוד לתאים בכותרות */
+  text-align: left; /* יישור שמאלה */
+  font-weight: bold; /* מודגש */
+}
+
+.table-body {
+  background-color: #ffffff; /* צבע רקע לגוף הטבלה */
+}
+
+.table-cell {
+  padding: 0.75rem; /* ריפוד לתאים */
+  border-bottom: 1px solid #e5e7eb; /* גבול תחתון */
+}
+
+.btn {
+  padding: 0.5rem 1rem; /* ריפוד כפתור */
+  border-radius: 0.375rem; /* פינות מעוגרות */
+}
+
+.badge {
+  padding: 0.25rem 0.5rem; /* ריפוד לבאגים */
+  border-radius: 0.375rem; /* פינות מעוגרות */
+}
+
+.badge-success {
+  background-color: #38a169; /* צבע רקע להצלחה */
+  color: white; /* צבע טקסט לבן */
+}
+
+.badge-warning {
+  background-color: #f6ad55; /* צבע רקע לאזהרה */
+  color: white; /* צבע טקסט לבן */
+}
+
+.badge-primary {
+  background-color: #3182ce; /* צבע רקע ראשי */
+  color: white; /* צבע טקסט לבן */
+}
+.small-icon {
+  width: 12px; /* גובה מותאם אישית */
+  height: 12px; /* רוחב מותאם אישית */
+}

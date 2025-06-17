@@ -1,9 +1,88 @@
+/* header.component.css */
+
+header {
+    background-color: #ffffff; /* צבע רקע */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* צל */
+    border-bottom: 1px solid #e5e7eb; /* גבול תחתון */
+    position: sticky; /* הדבקת הכותרת */
+    top: 0;
+    z-index: 50; /* שכבת עומק */
+}
+
+.px-6 {
+    padding-left: 1.5rem; /* רווח פנימי שמאלי */
+    padding-right: 1.5rem; /* רווח פנימי ימני */
+}
+
+.py-4 {
+    padding-top: 1rem; /* רווח פנימי עליון */
+    padding-bottom: 1rem; /* רווח פנימי תחתון */
+}
+
+.flex {
+    display: flex; /* תצוגת פלקס */
+}
+
+.items-center {
+    align-items: center; /* יישור מרכזי */
+}
+
+.justify-between {
+    justify-content: space-between; /* רווח בין הפריטים */
+}
+
+.space-x-4 > :not(:last-child) {
+    margin-right: 1rem; /* רווח בין פריטים */
+}
+
+.text-xl {
+    font-size: 1.25rem; /* גודל טקסט */
+}
+
+.font-bold {
+    font-weight: bold; /* משקל פונט */
+}
+
+.text-gray-900 {
+    color: #1f2937; /* צבע טקסט */
+}
+
+.text-sm {
+    font-size: 0.875rem; /* גודל טקסט קטן */
+}
+
+.text-gray-600 {
+    color: #4b5563; /* צבע טקסט אפור */
+}
+
+.bg-primary-600 {
+    background-color: #2563eb; /* צבע רקע ראשי */
+}
+
+.bg-gray-200 {
+    background-color: #e5e7eb; /* צבע רקע אפור */
+}
+
+.rounded-lg {
+    border-radius: 0.5rem; /* פינות מעוגלות */
+}
+
+.rounded-full {
+    border-radius: 9999px; /* פינות מעוגלות לחלוטין */
+}
+
 .small-icon {
-  width: 20px; /* גובה מותאם אישית */
-  height: 20px; /* רוחב מותאם אישית */
+    width: 1rem; /* גודל אייקון */
+    height: 1rem; /* גובה אייקון */
 }
 
 .small-icon-small {
-  width: 16px; /* גובה מותאם אישית לאייקון הקטן */
-  height: 16px; /* רוחב מותאם אישית לאייקון הקטן */
+    width: 0.75rem; /* גודל אייקון קטן */
+    height: 0.75rem; /* גובה אייקון קטן */
+}
+
+/* תמיכה בכיווניות RTL */
+body {
+    direction: rtl;
+    text-align: right; /* יישור טקסט לימין */
 }

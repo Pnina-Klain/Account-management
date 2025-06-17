@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
   selector: 'app-customers',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
+  styleUrls: ['./customers.component.css'],
   template: `
     <div class="fade-in">
       <div class="flex justify-between items-center mb-8">
@@ -16,7 +17,7 @@ import { Observable } from 'rxjs';
           <h1 class="text-3xl font-bold text-gray-900 mb-2">לקוחות</h1>
           <p class="text-gray-600">ניהול פרטי לקוחות</p>
         </div>
-        <button (click)="toggleCustomerForm()" class="btn btn-primary btn-lg">
+        <button (click)="toggleCustomerForm()" class="btn btn-primary">
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
           </svg>
@@ -62,10 +63,10 @@ import { Observable } from 'rxjs';
             </div>
 
             <div class="flex justify-end space-x-4 mt-6">
-              <button type="button" (click)="toggleCustomerForm()" class="btn btn-secondary btn-md">
+              <button type="button" (click)="toggleCustomerForm()" class="btn btn-secondary">
                 ביטול
               </button>
-              <button type="submit" [disabled]="customerForm.invalid" class="btn btn-success btn-md">
+              <button type="submit" [disabled]="customerForm.invalid" class="btn btn-success">
                 הוסף לקוח
               </button>
             </div>
@@ -150,10 +151,10 @@ import { Observable } from 'rxjs';
                 </div>
               </div>
               <div class="flex justify-end space-x-4 mt-6">
-                <button type="button" (click)="closeEditModal()" class="btn btn-secondary btn-sm">
+                <button type="button" (click)="closeEditModal()" class="btn btn-secondary">
                   ביטול
                 </button>
-                <button type="submit" [disabled]="editForm.invalid" class="btn btn-primary btn-sm">
+                <button type="submit" [disabled]="editForm.invalid" class="btn btn-primary">
                   שמור שינויים
                 </button>
               </div>

@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 
 const receiptSchema = new mongoose.Schema({
-    client: { type: mongoose.Schema.Types.ObjectId, ref: 'Client' },
+    receiptNumber: { type: Number, required: true },
+    customerId: { type: mongoose.Schema.Types.ObjectId, ref: 'Customer', required: true },
     date: { type: Date, required: true },
     amount: { type: Number, required: true },
-    paymentMethod: { type: String, enum: ['Cash', 'Credit', 'Transfer'], required: true },
+    paymentMethod: { type: String, required: true },
     details: { type: String, required: true },
-    receiptNumber: { type: Number, unique: true }
+    createdAt: { type: Date, default: Date.now }
 });
 
 module.exports = mongoose.model('Receipt', receiptSchema);

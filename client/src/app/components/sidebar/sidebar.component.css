@@ -1,4 +1,48 @@
-.small-icon {
-  width: 16px; /* גובה מותאם אישית */
-  height: 16px; /* רוחב מותאם אישית */
+/* sidebar.component.css */
+
+aside {
+    background-color: #ffffff; /* צבע רקע */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* צל */
+    border-left: 1px solid #e5e7eb; /* גבול שמאלי */
+    width: 100%; /* רוחב הסרגל הצדדי */
+    height: auto; /* גובה אוטומטי */
+    position: relative; /* סידור יחסי */
+    z-index: 40; /* שכבת עומק */
+}
+
+.flex {
+    display: flex; /* תצוגת פלקס */
+    flex-direction: row; /* כיוון פלקס לאופקי */
+    justify-content: space-around; /* רווח שווה בין הפריטים */
+    align-items: center; /* יישור מרכזי */
+}
+
+nav {
+    display: flex; /* תצוגת פלקס */
+    flex-direction: row; /* כיוון אופקי */
+    gap: 1rem; /* רווח בין הלינקים */
+}
+
+.sidebar-nav-item {
+    display: flex; /* תצוגת פלקס */
+    align-items: center; /* יישור מרכזי */
+    padding: 0.5rem 1rem; /* רווח פנימי */
+    border-radius: 0.375rem; /* פינות מעוגלות */
+    color: #4b5563; /* צבע טקסט אפור */
+    transition: background-color 0.2s; /* מעבר חלק */
+}
+
+.sidebar-nav-item:hover {
+    background-color: #f3f4f6; /* צבע רקע בעת ריחוף */
+}
+
+.active {
+    background-color: #e5e7eb; /* צבע רקע פעיל */
+    font-weight: bold; /* משקל פונט בולט */
+}
+
+/* תמיכה בכיווניות RTL */
+body {
+    direction: rtl; /* כיוון מימין לשמאל */
+    text-align: right; /* יישור טקסט לימין */
 }

@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
   imports: [CommonModule, RouterModule],
   styleUrls: ['./header.component.css'], // הוסף כאן את קובץ ה-CSS
   template: `
-    <header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+    <header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50" dir="rtl">
       <div class="px-6 py-4">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-4">
